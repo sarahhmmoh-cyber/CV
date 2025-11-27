@@ -1,0 +1,210 @@
+body {
+  background: #fef9fb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.cv-container {
+  display: flex;
+  width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* الاسم */
+.name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  transform: skew(-5deg);
+  font-size: 44px;
+  color: #111;
+  text-align: center;
+  margin: 10px 0 5px;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* الأقسام */
+.left-section {
+  background: #f3d8df;
+  width: 35%;
+  padding: 30px;
+  color: #333;
+}
+
+.right-section {
+  background: #fff;
+  width: 65%;
+  padding: 40px;
+}
+
+/* دائرة الـCV */
+.profile-circle {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 35px;
+  border-radius: 50%;
+  background: #cc7c96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: italic 700 48px 'Playfair Display', serif;
+  color: #fff;
+  letter-spacing: 2px;
+  transform: rotate(-6deg);
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+/* العناوين الفرعية */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font: italic 700 22px 'Merriweather', serif;
+  background: #cc7c96;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.section h2 img {
+  width: 15px;
+  height: 15px;
+}
+
+/* النصوص */
+.section p, .section ul {
+  font: 600 15.5px 'Merriweather', serif;
+  color: #1a1a1a;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 1px rgba(0,0,0,0.15);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* العنوان الأوسط */
+.title-bubble {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #cc7c96;
+  font: italic 700 18px 'Merriweather', serif;
+  border-radius: 50px;
+  padding: 14px 40px;
+  margin: 25px auto;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
+}
+
+/* نقاط Work Experience */
+.work-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.work-item strong {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+
+.work-item strong::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+/* قسم المهارات Skills */
+.skills-list li {
+  position: relative;
+  padding-left: 20px;
+  color: #000;
+}
+
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+.about-me p {
+  position: relative;
+  padding-left: 20px;
+  color: #000;
+}
+
+/* نقطة قبل أول فقرة فقط */
+.about-me p:first-of-type::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #000; 
+}
+.contact-info p {
+  position: relative;
+  padding-left: 20px;
+  color: #000;
+}
+
+/* النقاط قبل كل سطر */
+.contact-info p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #000; 
+}
+.sub-title {
+  background-color: #f3c6d0; /* نفس لون الأقسام */
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  margin-bottom: 10px; /* مسافة بسيطة قبل المربع */
+}
+
+.sub-title img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.summary-box {
+  background: #fef2f5;
+  border-left: 5px solid #cc7c96;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.8;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
